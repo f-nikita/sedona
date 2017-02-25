@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Седона, туризм, гостиницы">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+</head>
+    <body>
+        <div class="grid">
+            <header class="layout-wrapper">
+                <div class="container">
+                    <div class="header-navigation">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Информация</a></li>
+                                <li><a href="#">Фото и видео</a></li>
+                                <li><a class="logo-link" href="index.html"><img class="header-logo" src="img/logo-sedona.png" width="138" height="70" alt="logo"></a></li>
+                                <li><a href="#">Карта штата</a></li>
+                                <li><a href="#">Гостиницы</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-form">
+                        <form action="get">
+                            <div class="header-form-left">
+                                <fieldset>
+                                    <legend class="header-text">Инфраструктура:</legend>
+                                    <ul>
+                                        <li>
+                                        <input type="checkbox" name="pool" id="header-checkbox-pool">
+                                        <label class="checkbox" for="header-checkbox-pool">Бассейн</label></li>
+                                        <li>
+                                        <input type="checkbox" name="parking" id="header-checkbox-parking">
+                                        <label class="checkbox" for="header-checkbox-parking">Парковка</label></li>
+                                        <li>
+                                        <input type="checkbox" name="wifi" id="header-checkbox-wifi">
+                                        <label class="checkbox" for="header-checkbox-wifi">WI-FI</label></li>
+                                    </ul>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="header-text">Тип жилья:</legend>
+                                    <ul>
+                                        <li>
+                                        <input type="checkbox" name="hotel" id="header-checkbox-hotel">
+                                        <label class="checkbox" for="header-checkbox-hotel">Гостиница</label></li>
+                                        <li>
+                                        <input type="checkbox" name="motel" id="header-checkbox-motel">
+                                        <label class="checkbox" for="header-checkbox-motel">Мотель</label></li>
+                                        <li>
+                                        <input type="checkbox" name="appartments" id="header-checkbox-appartments">
+                                        <label class="checkbox" for="header-checkbox-appartments">Аппартаменты</label></li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            <div class="header-form-right">
+                                <fieldset class="range">    
+                                    <legend>Стоимость в сутки(р.):</legend>
+                                    <div class="range-top">
+                                    <div class="range-border">
+                                        <div class="range-count">
+                                            <label for="amount">От</label>
+                                            <input type="text" id="amount">
+                                        </div>
+                                            <div class="range-count">
+                                            <label for="amount-1">До</label>
+                                        <input type="text" id="amount-1">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="slider-ui">
+                                        <div id="slider-range"></div>
+                                    </div>
+                                    <a class="btn-range" href="#">Показать</a>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            
+            <main class="layout-wrapper">
+                <div class="filter">
+                    <div class="filter-left">
+                        <div class="filter-list">
+                            <ul>
+                                <li><b class="filter-list-head">Найдено: 3</b></li>
+                                <li>Сортировка:</li>
+                                <li><a class="filter-active" href="#">По цене:</a></li>
+                                <li><a  href="#">По типу:</a></li>
+                                <li><a href="#">По рейтингу:</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-right">
+                        <a class="pointer-left" href="#"></a>
+                        <a class="pointer-right" href="#"></a>
+                    </div>
+                </div>
+                <section class="catalog-item">
+                    <div class="catalog-item-left">
+                        <img class="catalog-item-img" src="img/photo2.png" alt="Amara Resort">
+                        <div>
+                            <h2>Amara Resort & Spa</h2>
+                            <p>Гостиница <span>от 3500 р.</span></p>
+                            <a class="btn btn-info" href="#">Подробнее</a>
+                            <a class="btn btn-order" href="#">Забронировать</a>
+                        </div>
+                    </div>
+                    <div class="catalog-item-right">
+                        <div class="catalog-item-rating">Рейтинг: 8,5</div>
+                    </div>
+                </section>
+                <section class="catalog-item">
+                    <div class="catalog-item-left">
+                        <img class="catalog-item-img" src="img/photo1.png" alt="Desert Quail">
+                        <div>
+                            <h2>Desert Quail Inn</h2>
+                            <p>Гостиница от <span>2000 р.</span></p>
+                            <a class="btn btn-info" href="#">Подробнее</a>
+                            <a class="btn btn-order" href="#">Забронировать</a>
+                        </div>
+                    </div>
+                    <div class="catalog-item-right">
+                        <div class="catalog-item-rating">Рейтинг: 8,9</div>
+                    </div>
+                </section>
+                <section class="catalog-item">
+                    <div class="catalog-item-left">
+                        <img class="catalog-item-img" src="img/photo3.png" alt="Villas At Poco">
+                        <div>
+                            <h2>Villas At Poco Diablo</h2>
+                            <p>Гостиница от <span>4000 р.</span></p>
+                            <a class="btn btn-info" href="#">Подробнее</a>
+                            <a class="btn btn-order" href="#">Забронировать</a>
+                        </div>
+                    </div>
+                    <div class="catalog-item-right">
+                        <div class="catalog-item-rating">Рейтинг: 9,2</div>
+                    </div>
+                </section>
+            </main>
+            
+             <footer class="layout-wrapper">
+                <div class="container footer-container">
+                   <div class="footer-hashtag">
+                      <p>#Visitsedona</p>
+                   </div>
+                   <div class="footer-social">
+                       <div class="social-item">
+                           <a class="social-item-btn icon-twitter" href="#"></a>
+                           <a class="social-item-btn icon-facebook" href="#"></a>
+                           <a class="social-item-btn icon-youtube" href="#"></a>
+                       </div>
+                   </div>
+                   <div>
+                       <p class="footer-logo footer-logo-text">Website by</p>
+                       <img class="footer-logo" src="img/html-academy.png" alt="html-academy">  
+                   </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/ui-slider.min.js"></script>
+    </body>
+</html>
